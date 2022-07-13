@@ -191,5 +191,11 @@
   <ItemGroup>
     <None Include="Resources\minimize_window_32px1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\name_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transaction_list_32px.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

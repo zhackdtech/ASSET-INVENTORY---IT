@@ -213,6 +213,16 @@ namespace IT_Asset_Inventory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap name_32px {
+            get {
+                object obj = ResourceManager.GetObject("name_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pct {
             get {
                 object obj = ResourceManager.GetObject("pct", resourceCulture);
@@ -226,6 +236,16 @@ namespace IT_Asset_Inventory.Properties {
         internal static System.Drawing.Bitmap settings_32px {
             get {
                 object obj = ResourceManager.GetObject("settings_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap transaction_list_32px {
+            get {
+                object obj = ResourceManager.GetObject("transaction_list_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

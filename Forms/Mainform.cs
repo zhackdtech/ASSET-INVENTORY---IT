@@ -63,6 +63,13 @@ namespace IT_Asset_Inventory.Forms
                     RemoveAllBG();
                     pnlSettings.BackColor = Color.FromArgb(255, (byte)(int)99, (byte)(int)149, (byte)(int)251);
                     break;
+                case 6:
+                    RemoveAllBG();
+                    pnlPurchaseHistory.BackColor = Color.FromArgb(255, (byte)(int)99, (byte)(int)149, (byte)(int)251);
+                    break;
+                default:
+                    MessageBox.Show("An error occured. Please contact your administrator.");
+                    break;
             }
         }
         private void RemoveAllBG()
@@ -74,6 +81,7 @@ namespace IT_Asset_Inventory.Forms
             pnlInventory.BackColor = Color.FromArgb(255, (byte)(int)69, (byte)(int)122, (byte)(int)235);
             pnlRepair.BackColor = Color.FromArgb(255, (byte)(int)69, (byte)(int)122, (byte)(int)235);
             pnlSettings.BackColor = Color.FromArgb(255, (byte)(int)69, (byte)(int)122, (byte)(int)235);
+            pnlPurchaseHistory.BackColor = Color.FromArgb(255, (byte)(int)69, (byte)(int)122, (byte)(int)235);
         }
 
         private void btnInventory_Click(object sender, EventArgs e)
@@ -104,6 +112,11 @@ namespace IT_Asset_Inventory.Forms
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             ActivateBG(0);
+        }
+
+        private void btnPurchaseHistory_Click(object sender, EventArgs e)
+        {
+            ActivateBG(6);
         }
     }
 }

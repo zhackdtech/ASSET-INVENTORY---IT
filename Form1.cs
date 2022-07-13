@@ -70,7 +70,7 @@ namespace IT_Asset_Inventory
                     }
                     else
                     {
-                        MessageBox.Show("cannot open connection, contact your administrator");
+                        nonet.ShowDialog();
                     }
 
                 }
