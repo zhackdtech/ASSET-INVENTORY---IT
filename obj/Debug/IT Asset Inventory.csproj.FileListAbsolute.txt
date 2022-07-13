@@ -1,0 +1,21 @@
+D:\IT Asset Inventory\bin\Debug\IT Asset Inventory.exe.config
+D:\IT Asset Inventory\bin\Debug\IT Asset Inventory.exe
+D:\IT Asset Inventory\bin\Debug\IT Asset Inventory.pdb
+D:\IT Asset Inventory\obj\Debug\IT Asset Inventory.csproj.AssemblyReference.cache
+D:\IT Asset Inventory\obj\Debug\IT Asset Inventory.csproj.SuggestedBindingRedirects.cache
+D:\IT Asset Inventory\obj\Debug\IT_Asset_Inventory.Properties.Resources.resources
+D:\IT Asset Inventory\obj\Debug\IT_ASSET_INVENTORY.UserInterface.Components.zTextBox.resources
+D:\IT Asset Inventory\obj\Debug\IT Asset Inventory.csproj.GenerateResource.cache
+D:\IT Asset Inventory\obj\Debug\IT Asset Inventory.csproj.CoreCompileInputs.cache
+D:\IT Asset Inventory\obj\Debug\IT Asset Inventory.exe
+D:\IT Asset Inventory\obj\Debug\IT Asset Inventory.pdb
+D:\IT Asset Inventory\obj\Debug\IT_Asset_Inventory.Form1.resources
+D:\IT Asset Inventory\bin\Debug\Bunifu_UI_v1.5.3.dll
+D:\IT Asset Inventory\bin\Debug\Bunifu_UI_v1.5.3.xml
+D:\IT Asset Inventory\obj\Debug\IT Asset Inventory.csproj.CopyComplete
+D:\IT Asset Inventory\obj\Debug\IT_Asset_Inventory.DialogBoxes.NoNetwork.resources
+D:\IT Asset Inventory\bin\Debug\MySql.Data.dll
+D:\IT Asset Inventory\bin\Debug\ZHCrypto.dll
+D:\IT Asset Inventory\bin\Debug\BouncyCastle.Crypto.dll
+D:\IT Asset Inventory\bin\Debug\Ubiety.Dns.Core.dll
+D:\IT Asset Inventory\obj\Debug\IT_Asset_Inventory.Forms.Mainform.resources
