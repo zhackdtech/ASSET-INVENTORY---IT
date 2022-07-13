@@ -28,7 +28,6 @@ namespace IT_Asset_Inventory.Forms
         private void btnExit_Click(object sender, EventArgs e)
         {
             fc.ShowDialog();
-            fc.Dispose();
         }
 
         private void btnMinimize_Click(object sender, EventArgs e)
