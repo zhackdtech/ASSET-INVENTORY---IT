@@ -19,3 +19,4 @@ D:\IT Asset Inventory\bin\Debug\ZHCrypto.dll
 D:\IT Asset Inventory\bin\Debug\BouncyCastle.Crypto.dll
 D:\IT Asset Inventory\bin\Debug\Ubiety.Dns.Core.dll
 D:\IT Asset Inventory\obj\Debug\IT_Asset_Inventory.Forms.Mainform.resources
+D:\IT Asset Inventory\obj\Debug\IT_Asset_Inventory.DialogBoxes.formClose.resources

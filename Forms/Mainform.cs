@@ -1,4 +1,5 @@
 ﻿using IT_Asset_Inventory.DatabaseManager;
+using IT_Asset_Inventory.DialogBoxes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,10 +24,11 @@ namespace IT_Asset_Inventory.Forms
         {
             //MessageBox.Show(security.Decrypt(Credentials.db_user), security.Decrypt(Credentials.db_password));
         }
-
+        formClose fc = new formClose();
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+            fc.ShowDialog();
+            fc.Dispose();
         }
 
         private void btnMinimize_Click(object sender, EventArgs e)

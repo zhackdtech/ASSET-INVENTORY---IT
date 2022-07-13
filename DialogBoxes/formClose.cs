@@ -16,5 +16,15 @@ namespace IT_Asset_Inventory.DialogBoxes
         {
             InitializeComponent();
         }
+
+        private void btnYes_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(Environment.ExitCode = 0);
+        }
+
+        private void btnNo_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
