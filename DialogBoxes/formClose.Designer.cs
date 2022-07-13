@@ -73,10 +73,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Poppins", 12F);
-            this.label2.Location = new System.Drawing.Point(31, 62);
+            this.label2.Font = new System.Drawing.Font("UD Digi Kyokasho NK-R", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label2.Location = new System.Drawing.Point(32, 69);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(284, 56);
+            this.label2.Size = new System.Drawing.Size(283, 36);
             this.label2.TabIndex = 3;
             this.label2.Text = "      Would you like to exit? Unsaved\r\nchanges will be lost.";
             // 

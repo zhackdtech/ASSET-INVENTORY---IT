@@ -31,12 +31,13 @@
             this.components = new System.ComponentModel.Container();
             this.bnfElipseMainForm = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.pnlTitleBar = new System.Windows.Forms.Panel();
+            this.zTextBox1 = new IT_ASSET_INVENTORY.UserInterface.Components.zTextBox();
             this.btnMinimize = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnExit = new Bunifu.Framework.UI.BunifuImageButton();
-            this.zTextBox1 = new IT_ASSET_INVENTORY.UserInterface.Components.zTextBox();
             this.bnfElipseMainPanel = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pnlDashboard = new System.Windows.Forms.Panel();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnDashboard = new Bunifu.Framework.UI.BunifuImageButton();
             this.bnfElipseDashboardBtn = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pnlInventory = new System.Windows.Forms.Panel();
             this.btnInventory = new Bunifu.Framework.UI.BunifuImageButton();
@@ -51,15 +52,17 @@
             this.bnfElipseAssets = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bnfElipseRepair = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pnlSettings = new System.Windows.Forms.Panel();
-            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnSettings = new Bunifu.Framework.UI.BunifuImageButton();
             this.bnfSettings = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.titleDrag = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.pnlMain.SuspendLayout();
+            this.pnlTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.pnlDashboard.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).BeginInit();
             this.pnlInventory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnInventory)).BeginInit();
             this.pnlDamageReport.SuspendLayout();
@@ -69,7 +72,7 @@
             this.pnlRepair.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRepairHistory)).BeginInit();
             this.pnlSettings.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSettings)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -82,40 +85,23 @@
             // pnlMain
             // 
             this.pnlMain.BackColor = System.Drawing.Color.White;
-            this.pnlMain.Controls.Add(this.btnMinimize);
-            this.pnlMain.Controls.Add(this.btnExit);
-            this.pnlMain.Controls.Add(this.zTextBox1);
+            this.pnlMain.Controls.Add(this.pnlTitleBar);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlMain.Location = new System.Drawing.Point(76, 0);
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(917, 635);
             this.pnlMain.TabIndex = 0;
             // 
-            // btnMinimize
+            // pnlTitleBar
             // 
-            this.btnMinimize.Image = global::IT_Asset_Inventory.Properties.Resources.minimize_window_32px1;
-            this.btnMinimize.ImageActive = null;
-            this.btnMinimize.Location = new System.Drawing.Point(840, 29);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(32, 32);
-            this.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimize.TabIndex = 1;
-            this.btnMinimize.TabStop = false;
-            this.btnMinimize.Zoom = 10;
-            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.Image = global::IT_Asset_Inventory.Properties.Resources.exit1;
-            this.btnExit.ImageActive = null;
-            this.btnExit.Location = new System.Drawing.Point(873, 29);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(32, 32);
-            this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnExit.TabIndex = 1;
-            this.btnExit.TabStop = false;
-            this.btnExit.Zoom = 10;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.pnlTitleBar.Controls.Add(this.zTextBox1);
+            this.pnlTitleBar.Controls.Add(this.btnMinimize);
+            this.pnlTitleBar.Controls.Add(this.btnExit);
+            this.pnlTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTitleBar.Location = new System.Drawing.Point(0, 0);
+            this.pnlTitleBar.Name = "pnlTitleBar";
+            this.pnlTitleBar.Size = new System.Drawing.Size(917, 76);
+            this.pnlTitleBar.TabIndex = 2;
             // 
             // zTextBox1
             // 
@@ -126,7 +112,7 @@
             this.zTextBox1.BorderSize = 2;
             this.zTextBox1.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.zTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.zTextBox1.Location = new System.Drawing.Point(15, 26);
+            this.zTextBox1.Location = new System.Drawing.Point(10, 25);
             this.zTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.zTextBox1.Multiline = false;
             this.zTextBox1.Name = "zTextBox1";
@@ -140,6 +126,32 @@
             this.zTextBox1.Texts = "";
             this.zTextBox1.UnderlinedStyle = false;
             // 
+            // btnMinimize
+            // 
+            this.btnMinimize.Image = global::IT_Asset_Inventory.Properties.Resources.minimize_window_32px1;
+            this.btnMinimize.ImageActive = null;
+            this.btnMinimize.Location = new System.Drawing.Point(840, 28);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(32, 32);
+            this.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinimize.TabIndex = 1;
+            this.btnMinimize.TabStop = false;
+            this.btnMinimize.Zoom = 10;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.Image = global::IT_Asset_Inventory.Properties.Resources.exit1;
+            this.btnExit.ImageActive = null;
+            this.btnExit.Location = new System.Drawing.Point(873, 28);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(32, 32);
+            this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnExit.TabIndex = 1;
+            this.btnExit.TabStop = false;
+            this.btnExit.Zoom = 10;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // bnfElipseMainPanel
             // 
             this.bnfElipseMainPanel.ElipseRadius = 30;
@@ -148,23 +160,24 @@
             // pnlDashboard
             // 
             this.pnlDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(149)))), ((int)(((byte)(251)))));
-            this.pnlDashboard.Controls.Add(this.bunifuImageButton1);
+            this.pnlDashboard.Controls.Add(this.btnDashboard);
             this.pnlDashboard.Location = new System.Drawing.Point(13, 132);
             this.pnlDashboard.Name = "pnlDashboard";
             this.pnlDashboard.Size = new System.Drawing.Size(48, 48);
             this.pnlDashboard.TabIndex = 1;
             // 
-            // bunifuImageButton1
+            // btnDashboard
             // 
-            this.bunifuImageButton1.Image = global::IT_Asset_Inventory.Properties.Resources.dashboard_layout_32px;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(8, 8);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(32, 32);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 0;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
+            this.btnDashboard.Image = global::IT_Asset_Inventory.Properties.Resources.dashboard_layout_32px;
+            this.btnDashboard.ImageActive = null;
+            this.btnDashboard.Location = new System.Drawing.Point(8, 8);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(32, 32);
+            this.btnDashboard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnDashboard.TabIndex = 0;
+            this.btnDashboard.TabStop = false;
+            this.btnDashboard.Zoom = 10;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // bnfElipseDashboardBtn
             // 
@@ -191,6 +204,7 @@
             this.btnInventory.TabIndex = 0;
             this.btnInventory.TabStop = false;
             this.btnInventory.Zoom = 10;
+            this.btnInventory.Click += new System.EventHandler(this.btnInventory_Click);
             // 
             // pnlDamageReport
             // 
@@ -212,6 +226,7 @@
             this.btnDamageReport.TabIndex = 0;
             this.btnDamageReport.TabStop = false;
             this.btnDamageReport.Zoom = 10;
+            this.btnDamageReport.Click += new System.EventHandler(this.btnDamageReport_Click);
             // 
             // pnlAsset
             // 
@@ -233,6 +248,7 @@
             this.btnBorrowedAsset.TabIndex = 0;
             this.btnBorrowedAsset.TabStop = false;
             this.btnBorrowedAsset.Zoom = 10;
+            this.btnBorrowedAsset.Click += new System.EventHandler(this.btnBorrowedAsset_Click);
             // 
             // pnlRepair
             // 
@@ -254,6 +270,7 @@
             this.btnRepairHistory.TabIndex = 0;
             this.btnRepairHistory.TabStop = false;
             this.btnRepairHistory.Zoom = 10;
+            this.btnRepairHistory.Click += new System.EventHandler(this.btnRepairHistory_Click);
             // 
             // bnfElipseInventory
             // 
@@ -278,23 +295,24 @@
             // pnlSettings
             // 
             this.pnlSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(122)))), ((int)(((byte)(235)))));
-            this.pnlSettings.Controls.Add(this.bunifuImageButton2);
+            this.pnlSettings.Controls.Add(this.btnSettings);
             this.pnlSettings.Location = new System.Drawing.Point(13, 575);
             this.pnlSettings.Name = "pnlSettings";
             this.pnlSettings.Size = new System.Drawing.Size(48, 48);
             this.pnlSettings.TabIndex = 1;
             // 
-            // bunifuImageButton2
+            // btnSettings
             // 
-            this.bunifuImageButton2.Image = global::IT_Asset_Inventory.Properties.Resources.settings_32px;
-            this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(8, 8);
-            this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Size = new System.Drawing.Size(32, 32);
-            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton2.TabIndex = 0;
-            this.bunifuImageButton2.TabStop = false;
-            this.bunifuImageButton2.Zoom = 10;
+            this.btnSettings.Image = global::IT_Asset_Inventory.Properties.Resources.settings_32px;
+            this.btnSettings.ImageActive = null;
+            this.btnSettings.Location = new System.Drawing.Point(8, 8);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(32, 32);
+            this.btnSettings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnSettings.TabIndex = 0;
+            this.btnSettings.TabStop = false;
+            this.btnSettings.Zoom = 10;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // bnfSettings
             // 
@@ -321,6 +339,13 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // titleDrag
+            // 
+            this.titleDrag.Fixed = true;
+            this.titleDrag.Horizontal = true;
+            this.titleDrag.TargetControl = this.pnlTitleBar;
+            this.titleDrag.Vertical = true;
+            // 
             // Mainform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -342,10 +367,11 @@
             this.Text = "Mainform";
             this.Load += new System.EventHandler(this.Mainform_Load);
             this.pnlMain.ResumeLayout(false);
+            this.pnlTitleBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             this.pnlDashboard.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).EndInit();
             this.pnlInventory.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnInventory)).EndInit();
             this.pnlDamageReport.ResumeLayout(false);
@@ -355,7 +381,7 @@
             this.pnlRepair.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnRepairHistory)).EndInit();
             this.pnlSettings.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSettings)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -369,7 +395,7 @@
         private Bunifu.Framework.UI.BunifuElipse bnfElipseMainPanel;
         private System.Windows.Forms.Panel pnlDashboard;
         private Bunifu.Framework.UI.BunifuElipse bnfElipseDashboardBtn;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private Bunifu.Framework.UI.BunifuImageButton btnDashboard;
         private System.Windows.Forms.Panel pnlInventory;
         private Bunifu.Framework.UI.BunifuImageButton btnInventory;
         private System.Windows.Forms.Panel pnlAsset;
@@ -386,9 +412,11 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel pnlSettings;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
+        private Bunifu.Framework.UI.BunifuImageButton btnSettings;
         private Bunifu.Framework.UI.BunifuElipse bnfSettings;
         private Bunifu.Framework.UI.BunifuImageButton btnExit;
         private Bunifu.Framework.UI.BunifuImageButton btnMinimize;
+        private System.Windows.Forms.Panel pnlTitleBar;
+        private Bunifu.Framework.UI.BunifuDragControl titleDrag;
     }
 }
