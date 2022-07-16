@@ -35,6 +35,9 @@ namespace IT_Asset_Inventory
         /// port is the port of the mysql service in the machine
         /// username is the username in mysql
         /// password is the password
+        /// 
+
+        //allow user to edit a config file for this connectionstring
         private string connectionString = "datasource=10.10.1.100;database=itusers;port=3306;username=itstaff;password=contactit123";
         public Form1()
         {
