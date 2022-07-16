@@ -16,7 +16,7 @@ namespace IT_Asset_Inventory
             {
                 //create a new instance of Ping 
                 Ping myPing = new Ping();
-                //host to check connection to
+                //host to check connection of
                 //the database server in this case
                 String host = "10.10.1.100";
                 //buffer of 32 bytes of data to transmit
