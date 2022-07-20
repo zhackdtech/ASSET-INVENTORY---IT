@@ -19,7 +19,7 @@ namespace IT_Asset_Inventory.DialogBoxes
 
         private void btnYes_Click(object sender, EventArgs e)
         {
-            Environment.Exit(Environment.ExitCode = 0);
+            Environment.Exit(0);
         }
 
         private void btnNo_Click(object sender, EventArgs e)
